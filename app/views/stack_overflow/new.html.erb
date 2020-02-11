@@ -1,0 +1,12 @@
+<h1>StackOverflow Questions</h1>
+<p>Fill this form out:</p>
+<hr/>
+
+<div >
+    <%= form_tag :action => 'update', :id => @question %>
+       <%= text_field "question", "name", "size" => 20 %>
+       <%= text_field "user", "name", "size" => 20 %>
+    <%= end_form_tag %>
+<div >
+
+

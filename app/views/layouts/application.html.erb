@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Faraway Gem</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+   <nav>
+    <div> <h1> Consuming APIs </h1> </div>
+    <div> 
+      <ul>
+        <li> <%= link_to "Search Homeaway", searchescontroller_homeaway_connect_path %> </li>
+        <li> <%= link_to "Stack OverFlow", stack_overflow_new_path %> </li>
+        <li> <%= link_to "Home", static_pages_home_path %> </li>
+      </ul>
+      <div> <h1> Welcome <%= @welcomeName %> </h1> </div>
+    </div>
+   </nav>
+    <%= yield %>
+  </body>
+</html>
